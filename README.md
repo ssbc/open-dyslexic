@@ -5,6 +5,42 @@ README
 
 ![ZDNet example](https://github.com/antijingoist/open-dyslexic/raw/master/screenshots/zdnetarticle.PNG)
 
+_This is a minor modification of the original [open-dyslexic](https://github.com/antijingoist/open-dyslexic) repo to make it possible to easily include this in Node projects. All credit goes to the original authors there._
+
+## Example Usage
+
+
+```bash
+$ npm i open-dyslexic require-style
+$ npm i yo-yo
+```
+
+```js
+var requireStyle = require('require-style')
+var html = require('yo-yo')
+
+var style = html`
+  <style>
+    ${requireStyle('open-dyslexic')} 
+
+    body {
+      font-family: OpenDyslexicRegular;
+    }
+  </style>
+`
+document.head.appendChild(style)
+
+
+var hello = html`
+  <h1>Hello Open Dyslexic!</h1>
+`
+document.body.appendChild(hello)
+```
+
+Notes : this "just works" in electron apps, but for bundled apps read `require-style` documentation about bundling transforms.
+
+## Original README
+
 Download the [latest bleeding edge version](https://github.com/antijingoist/open-dyslexic/archive/master.zip).
 
 Places I've officially uploaded the latest stable versions to are [dafont.com](http://dafont.com/open-dyslexic.font) and [opendyslexic.org](http://opendyslexic.org)
