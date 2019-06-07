@@ -1,6 +1,6 @@
 {
   "name": "open-dyslexic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a fork of open-dyslexic you can include in your Node project with require-style",
   "style": "open-dyslexic-regular",
   "scripts": {
