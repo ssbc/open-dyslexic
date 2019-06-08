@@ -1,5 +1,4 @@
-README
-======
+# Open Dyslexic
 
 ![Facebook example](https://github.com/antijingoist/open-dyslexic/raw/master/screenshots/facebook-dyslexic.png)
 
